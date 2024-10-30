@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* body */
+body {
+    background-color: rgb(241, 245, 241);
+}
+
 /* styles.css underline animation*/
 
 .underline-animation {
