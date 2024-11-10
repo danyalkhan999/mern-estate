@@ -4,12 +4,14 @@ import { configDotenv } from "dotenv";
 import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
 import { errMessage } from "./middlewares/errorMessage.middleware.js";
+import cors from "cors";
 
 configDotenv();
 
 const app = express();
 
 app.use(express.json());
+app.use(cors());
 
 app.listen(3000, () => {
   connectDB();
