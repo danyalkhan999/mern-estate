@@ -31,3 +31,24 @@ body {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
+
+/* google stylized */
+.google {
+    font-weight: 500;
+}
+
+.red {
+    color: #EA4335;
+}
+
+.yellow {
+    color: #FBBC05;
+}
+
+.green {
+    color: #34A853;
+}
+
+.blue {
+    color: #4285F4;
+}
