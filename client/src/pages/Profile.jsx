@@ -20,8 +20,10 @@ const Profile = () => {
     try {
       const uploadUrl = await uploadImageToCloudinary(imgFile);
       console.log("image url", uploadUrl);
-      setProfileImage(uploadUrl);
-      setSuccessMessage("Profile image is added.");
+      if (uploadUrl) {
+        setProfileImage(uploadUrl);
+        setSuccessMessage("Profile image is added.");
+      }
     } catch (error) {
       console.log("error", error);
       setErrorMessage("Failed!!!, Try again.");
