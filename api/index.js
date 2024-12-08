@@ -5,12 +5,14 @@ import userRouter from "./routes/user.route.js";
 import authRouter from "./routes/auth.route.js";
 import { errMessage } from "./middlewares/errorMessage.middleware.js";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 
 configDotenv();
 
 const app = express();
 
 app.use(express.json());
+app.use(cookieParser());
 app.use(cors());
 
 app.listen(3000, () => {
